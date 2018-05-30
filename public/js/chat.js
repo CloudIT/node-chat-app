@@ -82,7 +82,6 @@ jQuery('#message-form').on('submit', function (e) {
 var locationButton = jQuery('#send-location');
 locationButton.on('click', function () {
   if (!navigator.geolocation) {
-    locationButton.removeAttr('disabled').text('Send location');
     return alert('Geolocation not supported by your browser.');
   }
 
@@ -95,7 +94,7 @@ locationButton.on('click', function () {
       longitude: position.coords.longitude
     });
   }, function () {
-    locationButton.removeAttr('disabled');
+    locationButton.removeAttr('disabled').text('Send location');
     alert('Unable to fetch location');
   });
 });
