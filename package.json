@@ -22,5 +22,8 @@
     "expect": "^30.3.0",
     "mocha": "^11.3.0",
     "socket.io": ">=2.4.0"
+  },
+  "overrides": {
+    "serialize-javascript": "^7.0.5"
   }
 }
