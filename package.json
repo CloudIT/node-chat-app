@@ -19,8 +19,8 @@
     "xmlhttprequest-ssl": ">=1.6.2"
   },
   "devDependencies": {
-    "expect": "^23.0.1",
-    "mocha": "^5.2.0",
+    "expect": "^30.3.0",
+    "mocha": "^11.3.0",
     "socket.io": ">=2.4.0"
   }
 }
